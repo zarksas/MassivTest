@@ -5,4 +5,33 @@ for (let i = 0; i < arrayNum.length; i++) {
        arrRes.push(arrayNum[i])
    }
 }
-console.log(arrRes)
+console.log(arrRes);
+
+
+let people = [{name: 'Bradly', age: 74}, {name: 'Juliya', age: 20}, 
+{name: 'Walter', age: 35}, {name: 'Kristen', age: 12}, {name: 'Sam', age: 2}];
+
+for (let i = 0; i < people.length; i++) {
+    console.log(people[i].name)
+};
+
+for (let i = 0; i < people.length; i++) {
+    if (people[i].age >= 18) {
+        console.log(people[i].name)
+    }
+};
+
+for (let i = 0; i < people.length; i++) {
+    if (people[i].age > 65) {
+        console.log(people[i].name)
+    }
+};
+
+function addPeople(names, age) {
+    people.push({names, age});
+   
+};
+
+addPeople('frank', 12);
+console.log(people);
+
