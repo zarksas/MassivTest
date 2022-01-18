@@ -35,3 +35,17 @@ function addPeople(names, age) {
 addPeople('frank', 12);
 console.log(people);
 
+function getPositiveArr(arr) {
+    let arrNev = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 0) {
+            arrNev.push(arr[i])
+        }
+    }
+    return arrNev
+}
+
+let arr = [10, -12, 231, 1, -32, -0.001, 75]; 
+
+console.log(getPositiveArr(arr))
+
